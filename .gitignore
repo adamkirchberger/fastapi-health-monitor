@@ -1,0 +1,23 @@
+# Local testing
+output
+testing
+.coverage
+*.retry
+*.egg-info
+.tox
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Mac
+*.DS_Store
+
+# Development environments
+.env
+env
+.venv
+venv
+
+# IDE
+.vscode
