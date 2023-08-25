@@ -22,6 +22,8 @@ pip install fastapi-health-monitor
 
 This example shows a FastAPI application which returns a dad joke from an external API.
 
+The checks are run every 10 seconds by default. This can be changed using an environment variable `HEATH_CHECK_DELAY_SECONDS`.
+
 ```python
 from fastapi import FastAPI
 import requests
