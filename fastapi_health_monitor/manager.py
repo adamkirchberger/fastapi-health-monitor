@@ -75,7 +75,7 @@ class HealthCheckManager:
             except Exception as e:  # pylint: disable=W0718
                 logger.exception("manager loop error: " + str(e))
             # Wait for health check delay
-            await asyncio.sleep(settings.heath_check_delay_seconds)
+            await asyncio.sleep(settings.health_check_delay_seconds)
         logger.info("stopped health check refresh")
 
     def get_response(self) -> SystemHealth:

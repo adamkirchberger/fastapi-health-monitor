@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     Settings defines parameters that can be overridden and their defaults.
     """
 
-    heath_check_delay_seconds: int = 10
+    health_check_delay_seconds: int = 10
 
     # Read settings from .env file if one exists
     model_config = SettingsConfigDict(

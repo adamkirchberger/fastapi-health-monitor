@@ -12,7 +12,7 @@ def test_that_health_monitor_component_is_registered(component_status):
     app = FastAPI(debug=True)
 
     # GIVEN health check interval
-    settings.heath_check_delay_seconds = 1
+    settings.health_check_delay_seconds = 1
 
     # GIVEN component check function
     def fake_component_check(component):
@@ -60,7 +60,7 @@ def test_that_health_monitor_unhealthy_component_returns_error_status(component_
     app = FastAPI(debug=True)
 
     # GIVEN health check interval
-    settings.heath_check_delay_seconds = 1
+    settings.health_check_delay_seconds = 1
 
     # GIVEN component check function
     def fake_component_check(component):
@@ -105,7 +105,7 @@ def test_that_health_monitor_component_error_returns_error_status(caplog):
     app = FastAPI(debug=True)
 
     # GIVEN health check interval
-    settings.heath_check_delay_seconds = 1
+    settings.health_check_delay_seconds = 1
 
     # GIVEN component check function that raises error
     def fake_component_check(component):
