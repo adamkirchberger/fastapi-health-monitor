@@ -1,5 +1,7 @@
 # FastAPI Health Monitor
 
+[![codecov](https://codecov.io/gh/adamkirchberger/fastapi-health-monitor/graph/badge.svg?token=8IdTKDXy89)](https://codecov.io/gh/adamkirchberger/fastapi-health-monitor)
+
 A health monitor for FastAPI applications which runs user provided background checks to determine the current overall health status of an API system.
 
 ## Features
