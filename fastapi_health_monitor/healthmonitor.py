@@ -124,7 +124,7 @@ class HealthMonitor:
         component_name: str,
         measurement_name: str,
         check_function: Callable[[ComponentHealth], ComponentHealth],
-        component_type: str = None,
+        component_type: Optional[str] = None,
         observed_unit: Optional[str] = None,
         component_id: Optional[str] = None,
     ):

@@ -18,7 +18,7 @@ class HealthCheckManager:
         service_id: str,
         version: str,
         release_id: str,
-        description: str = None,
+        description: Optional[str] = None,
         extra_notes: Optional[List[str]] = None,
     ):
         """
@@ -73,7 +73,7 @@ class HealthCheckManager:
                 # break when app is exited
                 break
             except Exception as e:  # pylint: disable=W0718
-                logger.exception("manager loop error: " + str(e))
+                logger.exception(f"manager loop error: {e}")
             # Wait for health check delay
             await asyncio.sleep(settings.health_check_delay_seconds)
         logger.info("stopped health check refresh")
