@@ -90,6 +90,8 @@ async def root():
 ## Example response
 
 ```json
+/health 200 OK
+
 {
     "service_id": "dadjokes",
     "status": "ok",
