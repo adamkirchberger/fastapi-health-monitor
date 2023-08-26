@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fastapi-health-monitor"
-version = "1.0.0"
+version = "1.0.1"
 description = "A health monitor for FastAPI applications."
 authors = ["Adam Kirchberger <adamkirchberger@users.noreply.github.com>"]
 readme = "README.md"
